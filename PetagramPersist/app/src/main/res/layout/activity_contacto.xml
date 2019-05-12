@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ContactoAct">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/activeDetailCont" layout="@layout/actionbar_detail"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TILName"
+        android:layout_marginBottom="@dimen/margin_top_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_bot"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/IETName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/HintNombre" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TILEmail"
+        android:layout_marginBottom="@dimen/margin_top_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_bot"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/IETEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/HintEmail" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_marginVertical="@dimen/margin_top_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MessageTitle"/>
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"/>
+
+    <TextView
+        android:layout_marginVertical="@dimen/margin_top_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/RemPassword"></TextView>
+
+    <EditText
+        android:inputType="textPassword"
+        android:minLines="2"
+        android:id="@+id/RemPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"/>
+
+    <Button
+        android:onClick="mandarEmail"
+        android:id="@+id/SendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SendButton"/>
+
+</LinearLayout>
+</ScrollView>

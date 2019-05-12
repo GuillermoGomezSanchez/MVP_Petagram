@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="elevationActBar">4dp</dimen>
+    <dimen name="sepLikeCuenta">6dp</dimen>
+    <dimen name="titleSize">18dp</dimen>
+    <dimen name="sizeIconCalif">36dp</dimen>
+    <dimen name="margin_top_bot">9dp</dimen>
+</resources>
